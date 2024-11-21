@@ -53,6 +53,27 @@
         .row4{
             background-color: rgb(246, 183, 116);
             display: flex;
+            padding: 20px;
+            height: 100vh;
+            align-items: center;
+        }
+        .s1 {
+            background-color: white;
+            margin: 5px;
+            padding: 5px;
+            border-radius: 5px;
+            border: 2px black solid;    
+        }
+        .row42 {
+            display: flex;
+            justify-content: center;
+        }
+        .row41 {
+            text-align: center;
+        }
+        .row5{
+            background-color: rgb(116, 198, 246);
+            display: flex;
             justify-content: space-around;
             padding: 20px;
             height: 100vh;
@@ -63,7 +84,7 @@
 <body>
     <div class="row">
         <div class="box">Anjana Shreya</div>
-        <div class="box"><a href="#Home">Home</a> | <a href="#Projects">Projects</a> | <a href="#About">About</a> | <a href="#Contact">Contact</a></div>
+        <div class="box"><a href="#Home">Home</a> | <a href="#About">About</a> | <a href="#Projects">Projects</a> | <a href="#Services">Services</a> | <a href="#Contact">Contact</a></div>
     </div>
     <div class="row1" id="Home">
         <div>
@@ -74,7 +95,10 @@
             <img src="https://picsum.photos/seed/picsum/200/300" alt="image">
         </div>
     </div>
-    <div class="row2" id="Projects">
+    <div class="row2" id="About">
+        I am Fullstack Developer
+    </div>
+    <div class="row3" id="Projects">
         <div>
             <h1>Projects</h1>
             <ol>
@@ -85,10 +109,26 @@
             </ol>
         </div>
     </div>
-    <div class="row3" id="About">
-        I am Fullstack Developer
+    <div class="row4" id="Services">
+        <div class="row41">
+            <h2>Services</h2>
+            <div class="row42">
+                <div class="s1">
+                    <b>Web Development:</b>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus quisquam laborum blanditiis molestias illo commodi repellat deleniti reprehenderit nesciunt officia.</p>
+                </div>
+                <div class="s1">
+                    <b>App Development:</b>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maxime, distinctio corrupti! A vitae, incidunt tempore fuga neque doloremque est ipsam!</p>
+                </div>
+                <div class="s1">
+                    <b>Backend Development:</b>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab illo soluta officiis numquam cumque? Aut perferendis consectetur nihil delectus harum!</p>
+                </div>
+            </div>
+        </div>
     </div>
-    <div class="row4" id="Contact">
+    <div class="row5" id="Contact">
         Ph: <br>
         Email: 
     </div>
