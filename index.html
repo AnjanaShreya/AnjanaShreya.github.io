@@ -1,149 +1,523 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Anjana Shreya</title>
-    <style>
-        *{
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-        }
-        .container {
-            background-color: aquamarine;
-        }
-        .row {
-            background-color: rgb(252, 159, 175);
-            display: flex;
-            justify-content: space-between;
-            padding: 15px;
-            position: fixed;
-            top: 0;
-            width: 99vw;
-            border: 2px solid black;
-            box-shadow: 2px 2px 20px;
-        }
-        .box {
-            /* background-color: rgb(167, 214, 232); */
-            padding: 2px;
-        }
-        .row1{
-            background-color: skyblue;
-            display: flex;
-            justify-content: space-around;
-            padding: 20px;
-            height: 100vh;
-            align-items: center;
-        }
-        .row2{
-            background-color: rgb(249, 211, 216);
-            display: flex;
-            justify-content: space-around;
-            padding: 20px;
-            height: 100vh;
-            align-items: center;
-        }
-        .row3{
-            background-color: rgb(187, 252, 161);
-            display: flex;
-            justify-content: space-around;
-            padding: 20px;
-            height: 100vh;
-            align-items: center;
-        }
-        .row4{
-            background-color: rgb(246, 183, 116);
-            display: flex;
-            padding: 20px;
-            height: 100vh;
-            align-items: center;
-        }
-        .s1 {
-            background-color: white;
-            margin: 5px;
-            padding: 5px;
-            border-radius: 5px;
-            border: 2px black solid;    
-        }
-        .row42 {
-            display: flex;
-            justify-content: center;
-        }
-        .row41 {
-            text-align: center;
-        }
-        .row5{
-            background-color: rgb(116, 198, 246);
-            display: flex;
-            justify-content: space-around;
-            padding: 20px;
-            height: 100vh;
-            align-items: center;
-        }
-    </style>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="This is my Portfolio">
+    <title>Anjana Shreya | Portfolio</title>
+    <!-- font icons -->
+    <link rel="stylesheet" href="assets/vendors/themify-icons/css/themify-icons.css">
+    <!-- Bootstrap + Meyawo main styles -->
+    <link rel="stylesheet" href="assets/css/meyawo.css">
+    <link rel="stylesheet" href="assets/css/timeline.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 </head>
-<body>
-    <div class="row">
-        <div class="box">Anjana Shreya</div>
-        <div class="box"><a href="#Home">Home</a> | <a href="#About">About</a> | <a href="#Projects">Projects</a> | <a href="#Services">Services</a> | <a href="#Contact">Contact</a></div>
-    </div>
-    <div class="row1" id="Home">
-        <div>
-            <h1>Anjana Shreya</h1>
-            <h3>Fullstack Developer</h3>
-        </div>
-        <div>
-            <img src="https://picsum.photos/seed/picsum/200/300" alt="image">
-        </div>
-    </div>
-    <div class="row2" id="About">
-        I am Fullstack Developer
-    </div>
-    <div class="row3" id="Projects">
-        <div>
-            <h1>Projects</h1>
-            <ol>
-                <li>Project 1</li>
-                <li>Project 2</li>
-                <li>Project 3</li>
-                <li>Project 4</li>
-            </ol>
-        </div>
-    </div>
-    <div class="row4" id="Services">
-        <div class="row41">
-            <h2>Services</h2>
-            <div class="row42">
-                <div class="s1">
-                    <b>Web Development:</b>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus quisquam laborum blanditiis molestias illo commodi repellat deleniti reprehenderit nesciunt officia.</p>
+
+<body data-spy="scroll" data-target=".navbar" data-offset="40" id="home">
+
+    <!-- Page Navbar -->
+    <nav class="custom-navbar" data-spy="affix" data-offset-top="20">
+        <div class="container">
+            <a class="logo" href="#"> Ch S Anjana Shreya</a>
+            <ul class="nav">
+                <li class="item">
+                    <a class="link" href="#home">Home</a>
+                </li>
+                <li class="item">
+                    <a class="link" href="#about">About</a>
+                </li>
+                <li class="item">
+                    <a class="link" href="#education">Education</a>
+                </li>
+                <li class="item">
+                    <a class="link" href="#skills">Skills</a>
+                </li>
+                <li class="item">
+                    <a class="link" href="#internships">Internships</a>
+                </li>
+                <li class="item">
+                    <a class="link" href="#projects">Projects</a>
+                </li>
+                <li class="item">
+                    <a class="link" href="#contact">Contact</a>
+                </li>
+            </ul>
+            <a href="javascript:void(0)" id="nav-toggle" class="hamburger hamburger--elastic">
+                <div class="hamburger-box">
+                    <div class="hamburger-inner"></div>
                 </div>
-                <div class="s1">
-                    <b>App Development:</b>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maxime, distinctio corrupti! A vitae, incidunt tempore fuga neque doloremque est ipsam!</p>
+            </a>
+        </div>
+    </nav><!-- End of Page Navbar -->
+
+    <!-- page header -->
+    <header id="home" class="header">
+        <div class="overlay"></div>
+        <div class="header-content container" id="typing-style">
+            <h1 class="header-title" style="text-align: start;">
+                <span class="up animate__animated animate__bounceInRight animate__fadeInRight">HI!</span>
+                <span class="down animate__animated animate__bounceInRight animate__fadeInLeft delay01" id="ele">Ch S Anjana Shreya</span>
+            </h1>
+            <p class="header-subtitle animate__animated animate__bounceInRight animate__fadeInRight delay015">FULLSTACAK WEB DESIGNER</p>
+            
+            <button class="btn btn-primary animate__animated animate__bounceInRight animate__fadeInLeft delay03"><a href="#projects" style="color: white;">Visit My Works</a></button>
+            <button class="btn btn-primary animate__animated animate__bounceInRight animate__fadeInLeft delay03"><a href="#contact" style="color: white;">Contact Me</a></button>
+            <!-- <button class="btn btn-primary">Visit My Works</button> -->
+        </div>
+    </header><!-- end of page header -->
+
+    <!-- about section -->
+    <section class="section pt-0 animate__animated animate-on-scroll" data-animation="fadeInDown" id="about" style="overflow: hidden;">
+        <!-- container -->
+        <div class="container text-center">
+            <!-- about wrapper -->
+            <div class="about">
+                <div class="about-img-holder">
+                    <img src="assets/imgs/woman.png" class="about-img">
                 </div>
-                <div class="s1">
-                    <b>Backend Development:</b>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab illo soluta officiis numquam cumque? Aut perferendis consectetur nihil delectus harum!</p>
+                <div class="about-caption">
+                    <p class="section-subtitle">Who Am I ?</p>
+                    <h2 class="section-title mb-3">About Me</h2>
+                    <p>
+                        As a B.Tech CSE student with a strong foundation in computer science principles and impeccable attention 
+                        to detail, I am seeking a fullstack internship to leverage my academic knowledge in real-world applications.
+                         My curriculum has equipped me with robust skills in both frontend and backend development.
+                        <br><br>
+                        I am eager to contribute to dynamic projects where I can apply my technical skills in designing, 
+                        developing, and maintaining web applications. I aim to gain cutting-edge knowledge and practical 
+                        experience, particularly in the areas of web development, database management, and cloud services.
+                        My objective is to stay up to date on emerging technologies, tackle challenging challenges collaboratively 
+                        in a team, and eventually add to creative IT solutions that promote company success.
+                    </p>
+                    <a href="Ch S Anjana Shreya.pdf" class="btn-rounded btn btn-outline-primary mt-4">View CV</a>
+                    <button class="btn-rounded btn btn-outline-primary mt-4" id="downloadBtn">Download CV</button>
+                </div>
+            </div><!-- end of about wrapper -->
+            <p class="about-caption details">Email: <a href="mailto:chitturianjana@gmail.com">chitturianjana@gmail.com</a>, Phone: 7013612696</p>
+        </div><!-- end of container -->
+    </section> <!-- end of about section -->
+
+
+    <!-- education section -->
+    <section class="section animate__animated animate-on-scroll" data-animation="fadeInLeft" id="education" style="overflow: hidden;">
+        <div class="container text-center">
+            <p class="section-subtitle">Where I Studied ?</p>
+            <h6 class="section-title mb-6">Education</h6>
+            <div class="pricing-wrapper">
+                <div class="pricing-card animate__animated animate-on-scroll" data-animation="rollIn" style="overflow: hidden;">
+                    <div class="pricing-card-header">
+                        <img class="pricing-card-icon2" src="assets/imgs/university.png">
+                    </div>
+                    <div class="pricing-card-body">
+                        <h6 class="pricing-card-title">Mahindra University</h6>
+                        <div class="pricing-card-list">
+                            <p>B.Tech, Computer Sciences</p>
+                            <p>2021 - 2025 </p>
+                            <p> Presently perusing 4<sup>th</sup> year</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="pricing-card animate__animated animate-on-scroll" data-animation="rollIn" style="overflow: hidden;">
+                    <div class="pricing-card-header">
+                        <img class="pricing-card-icon1" src="assets/imgs/college.png" />
+                    </div>
+                    <div class="pricing-card-body">
+                        <h6 class="pricing-card-title">Gowtham Junior College</h6>
+                        <div class="pricing-card-list">
+                            <p> SENIOR SECONDARY</p>
+                            <p>2019 - 2021 </p>
+                            <p> Cleared 12th in state with 95.6%</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="pricing-card animate__animated animate-on-scroll" data-animation="rollIn" style="overflow: hidden;">
+                    <div class="pricing-card-header">
+                        <img class="pricing-card-icon" src="assets/imgs/school.png" alt="Image">
+                    </div>
+                    <div class="pricing-card-body">
+                        <h6 class="pricing-card-title">D.A.V Public <br> School</h6>
+                        <div class="pricing-card-list">
+                            <p>PRIMARY TO SECONDARY</p>
+                            <p>2007 - 2019 </p>
+                            <p>Cleared 10th in CBSE with 91.4%</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-    <div class="row5" id="Contact">
-        Ph: <br>
-        Email: 
-    </div>
-    <!-- <h1>Anjana Shreya</h1>
-    <hr>
-    <h3>I am a webdeveloper</h3>
-    <img src="https://picsum.photos/seed/picsum/200/300" alt="This is an image">
-    <br>
-    <a href="#">Home</a>
-    <a href="#">Contact</a>
-    <a href="#">About</a>
-    <a href="https://anjanashreya.github.io/">Project 1</a>
-    <hr>
-    <h4>@copyright 2024. all rigths reserved</h4> -->
+    </section><!-- end of education section -->
+
+
+    <!-- skills section -->
+    <section class="section animate__animated animate-on-scroll" data-animation="fadeInRight" id="skills" style="overflow: hidden;">
+        <div class="container text-center">
+            <p class="section-subtitle">What I Learnt ?</p>
+            <h6 class="section-title mb-6">Skills</h6>
+            <!-- row -->
+            <div class="row">
+                <div class="col-md-4 animate__animated animate-on-scroll" data-animation="rotateIn" style="overflow: hidden;">
+                    <a href="#" class="portfolio-card">
+                        <img src="assets/imgs/folio-1.jpg" class="portfolio-card-img">
+                        <span class="portfolio-card-overlay">
+                            <span class="portfolio-card-caption">
+                                <h4>Languages</h5>
+                                    <p class="font-weight-normal">
+                                        C, Java ( Novice )<br>
+                                        DBMS ( MySql , Oracle 19c )<br>
+                                        NoSQL( MongoDB )<br>
+                                        HTML, CSS , Javascript <br>
+                                        ReactJS, NodeJS<br>
+                                    </p>
+                            </span>
+                        </span>
+                    </a>
+                </div>
+                <div class="col-md-4 animate__animated animate-on-scroll" data-animation="rotateIn" style="overflow: hidden;">
+                    <a href="#" class="portfolio-card" >
+                        <img class="portfolio-card-img" src="assets/imgs/folio-2.jpg" class="img-responsive rounded"
+                            alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page">
+                        <span class="portfolio-card-overlay" >
+                            <span class="portfolio-card-caption">
+                                <h4>Tools</h5>
+                                    <p class="font-weight-normal">
+                                        GitHub <br>
+                                        Canva <br>
+                                        Microsoft Office ( Excel, Word Document,
+                                        Power-point ) <br>
+                                    </p>
+                            </span>
+                        </span>
+                    </a>
+                </div>
+                <div class="col-md-4 animate__animated animate-on-scroll" data-animation="rotateIn" style="overflow: hidden;">
+                    <a href="#" class="portfolio-card">
+                        <img class="portfolio-card-img" src="assets/imgs/folio-3.jpg" class="img-responsive rounded"
+                            alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page">
+                        <span class="portfolio-card-overlay">
+                            <span class="portfolio-card-caption">
+                                <h4>FrameWorks</h5>
+                                    <p class="font-weight-normal">
+                                        Machine learning ( Supervised Learning,
+                                        Unsupervised Learning ) <br>
+                                        Natural Language
+                                        processing
+                                    </p>
+                            </span>
+                        </span>
+                    </a>
+                </div>
+            </div><!-- end of row -->
+        </div><!-- end of container -->
+    </section> <!-- end of skills section -->
+
+    <section class="section animate__animated animate-on-scroll" id="internships" data-animation="fadeInUp" style="overflow: hidden;">
+        <div class="text-center">
+            <div class="container1"> 
+                <p class="section-subtitle">My Experience ..!!</p>
+                <h6 class="section-title mb-6">Internships</h6>
+                <ul class="timelines">
+                    <li style="--accent-color:#41516C" class="animate__animated animate-on-scroll delay01" data-animation="fadeInUp" style="overflow: hidden;">
+                        <div class="date">EDGEFORCE SOLUTION</div>
+                        <div class="title">Frontend Intern
+                            <div style="padding-top: 0; font-size: 14px;">24 June 2024 - 22 Sept 2024</div>
+                        </div>
+                        <div class="descr">Currently an intern working on several projects in the frontend department of the organization. </div>
+                    </li>
+                    <li style="--accent-color:#FBCA3E" class="animate__animated animate-on-scroll delay02" data-animation="fadeInUp" style="overflow: hidden;">
+                        <div class="date">SUVIDHA FOUNDATION</div>
+                        <div class="title" style="padding-top: 0;">Web Developer
+                            <div style="padding-top: 0; font-size: 14px;">7 June 2024 - 7 July 2024</div>
+                        </div>
+                        
+                        <div class="descr">Made a clone of the official Suvidha Foundation website while interning as a web developer. 
+                            <br>
+                            <p> Click <a style="text-decoration: underline; font-weight: 700;" href="https://anjanashreya.github.io/Suvidha-Foundation/">here</a> for the link to the website</p>
+                        </div>
+                    </li>
+                    <!-- <li style="--accent-color:#E24A68">
+                        <div class="date">2012</div>
+                        <div class="title">Title 3</div>
+                        <div class="descr">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga minima consequuntur soluta placeat iure totam commodi repellendus ea delectus, libero fugit quod reprehenderit, sequi quo, et dolorum saepe nulla hic.</div>
+                    </li>
+                    <li style="--accent-color:#1B5F8C">
+                        <div class="date">2017</div>
+                        <div class="title">Title 4</div>
+                        <div class="descr">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Impedit, cumque.</div>
+                    </li>
+                    <li style="--accent-color:#4CADAD">
+                        <div class="date">2022</div>
+                        <div class="title">Title 5</div>
+                        <div class="descr">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit, non.</div>
+                    </li> -->
+                </ul>
+            </div>
+        </div>
+    </section><!-- end of internships section -->
+
+    <section class="section animate__animated animate-on-scroll" data-animation="fadeInRight" id="projects" style="overflow: hidden;">
+    <!-- <section class="section" id="projects"> -->
+        <div class="container text-center">
+            <p class="section-subtitle">What I Did ?</p>
+            <h6 class="section-title mb-6">Projects</h6>
+            <!-- row -->
+            <div class="row">
+                <!-- animate__animated animate-on-scroll" data-animation="rotateIn -->
+                <div class="col-md-4 animate__animated animate-on-scroll animate__slow" data-animation="rotateIn" id="proj1">
+                    <a class="project-card">
+                        <img src="assets/imgs/proj1.png" class="project-card-img">
+                        <span class="project-card-overlay">
+                            <span class="project-card-caption">
+                                <h4>EPALS</h4>
+                                <p class="font-weight-normal">
+                                    <b>Technologies Used: </b>ReactJS, NodeJS, MongoDB
+                                </p>
+                                <p class="font-weight-bold" id="visit1">Click for Details</p>
+                            </span>
+                        </span>
+                    </a>
+                </div>
+                
+                <div class="col-md-4 animate__animated animate-on-scroll animate__slow" data-animation="rotateIn" id="proj2">
+                    <a class="project-card" >
+                        <img class="project-card-img" src="assets/imgs/proj2.png" class="img-responsive rounded">
+                        <span class="project-card-overlay" >
+                            <span class="project-card-caption">
+                                <h4>Personal Website Of A Professor</h4>
+                                <p class="font-weight-normal">
+                                    <!-- A website to showcase personall achievements, course structures and other details -->
+                                    <b>Technologies Used: </b>HTML, CSS, JavaScript
+                                </p>
+                                <p class="font-weight-bold" id="visit2">Click for Details</p>
+                            </span>
+                        </span>
+                    </a>
+                </div>
+                
+                <div class="col-md-4 animate__animated animate-on-scroll animate__slow" data-animation="rotateIn" id="proj3">
+                    <a class="project-card">
+                        <img class="project-card-img" src="assets/imgs/proj3.png" class="img-responsive rounded">
+                        <span class="project-card-overlay">
+                            <span class="project-card-caption">
+                                <h4>Website For Organization Of Researched Information</h4>
+                                <p class="font-weight-normal">
+                                    <!-- All the information collected for IKS project can be organized here -->
+                                    <b>Technologies Used: </b>HTML, CSS
+                                </p>
+                                <p class="font-weight-bold" id="visit3">Click for Details</p>
+                            </span>
+                        </span>
+                    </a>
+                </div>
+                
+                <div class="col-md-4 animate__animated animate-on-scroll animate__slow" data-animation="rotateIn" style="padding-top: 30px;" id="proj4">
+                    <a class="project-card">
+                        <img class="project-card-img" src="assets/imgs/proj4.png" class="img-responsive rounded">
+                        <span class="project-card-overlay">
+                            <span class="project-card-caption">
+                                <h4>Alzheimer's disease detection</h4>
+                                <p class="font-weight-normal">
+                                    <!-- Alzheimer's disease detection model using vgg16 model and CNN layers. -->
+                                     <b>Libraries Used: </b>CNN layes, VGG16 model
+                                </p>
+                                <p class="font-weight-bold" id="visit4">Click for Details</p>
+                            </span>
+                        </span>
+                    </a>
+                </div>
+                
+                <div class="popup container text-center animate__animated animate-on-scroll animate__faster" data-animation="fadeIn" id="epals">
+                    <button class="close-btn" id="close-btn-epals">x</button>
+                    <h6 class="section-title mb-6">EPALS</h6>
+                    <div class="popup-content">
+                        <img src="assets/imgs/epals.png" alt="EPALS Project" class="epals-project">
+                        <p class="popup-textcontent">
+                            <b>Description: </b>
+                            Presently working on a employee management and monitering website wich aims to streamline the management of employee tasks, attendance, and performance through a centralized platform. It facilitates efficient task allocation, ensures compliance with company policies, and enhances communication between managers and employees
+                        </p>
+                    </div>
+                    <p class="links"  style="margin-top: 30px;">
+                        <b>Technologies Used: </b> HTML, CSS, Javascript
+                    </p><br>
+                    <p class="links">
+                        <b>GitHub Repository Link: </b>
+                        <a href="https://github.com/AnjanaShreya/EPALS" target="_blank">https://github.com/AnjanaShreya/EPALS</a>
+                    </p><br>
+                    <p class="links">
+                        <b>Website Link: </b>
+                        <a href="https://epals-website.netlify.app/" target="_blank">https://epals-website.netlify.app/</a>
+                    </p>
+                </div>
+                
+                <div class="popup container text-center animate__animated animate-on-scroll animate__faster" data-animation="fadeIn" id="profwebsite">
+                    <button class="close-btn" id="close-btn-profwebsite">x</button>
+                    <h6 class="section-title mb-6">Personal Website For A Professor</h6>
+                    <div class="popup-content">
+                        <img src="assets/imgs/project-1.png" alt="Personal Website Project" class="epals-project">
+                        <p class="popup-textcontent">
+                            <b>Description: </b>
+                            Created a personalized website, which they utilize to update their professional and personal information, courses they offer, schedules for those courses, projects they mentor, and other tasks in real time. 
+                        </p>
+                    </div>
+                    <p class="links"  style="margin-top: 30px;">
+                        <b>Technologies Used: </b> HTML, CSS, Javascript
+                    </p><br>
+                    <p class="links">
+                        <b>GitHub Repository Link: </b>
+                        <a href="https://github.com/AnjanaShreya/Personal-Website" target="_blank">https://github.com/AnjanaShreya/Personal-Website</a>
+                    </p> <br>
+                    <p class="links">
+                        <b>Website Link: </b>
+                        <a href="https://vlanc-lab.github.io/mu-nlp-course/" target="_blank">https://vlanc-lab.github.io/mu-nlp-course/</a>
+                    </p><br>
+                </div>
+                
+                <div class="popup container text-center animate__animated animate-on-scroll animate__faster" data-animation="fadeIn" id="organise">
+                    <button class="close-btn" id="close-btn-organise">x</button>
+                    <h6 class="section-title mb-6">Website For Organization Of Researched Information</h6>
+                    <div class="popup-content">
+                        <img src="assets/imgs/iks.png" alt="Personal Website Project" class="epals-project">
+                        <p class="popup-textcontent">
+                            <b>Description: </b>
+                            I've created a website to store and manage researched information. It allows for the efficient organization of data, making it easy to retrieve and review key insights. This platform helps streamline access to valuable research materials.
+                        </p>
+                    </div>
+                    <p class="links"  style="margin-top: 30px;">
+                        <b>Technologies Used: </b> HTML, CSS
+                    </p><br>
+                    <p class="links">
+                        <b>GitHub Repository Link: </b>
+                        <a href="https://github.com/AnjanaShreya/webpage-iks" target="_blank">https://github.com/AnjanaShreya/webpage-iks</a>
+                    </p> <br>
+                    <p class="links">
+                        <b>Website Link: </b>
+                        <a href="https://anjanashreya.github.io/webpage-iks/" target="_blank">https://anjanashreya.github.io/webpage-iks/</a>
+                    </p><br>
+                </div>
+                
+                <div class="popup container text-center animate__animated animate-on-scroll animate__faster" data-animation="fadeIn" id="DLproject">
+                    <button class="close-btn" id="close-btn-DLproject">x</button>
+                    <h6 class="section-title mb-6">Alzheimer's disease detection</h6>
+                    <div class="popup-content">
+                        <img src="assets/imgs/4.png" alt="Personal Website Project" class="epals-project">
+                        <p class="popup-textcontent">
+                            <b>Description: </b>
+                            Detecting Alzheimer's disease using deep learning architectures involves employing the VGG16 model, a 
+                            convolutional neural network (CNN) known for its powerful image feature extraction. The model's 
+                            pre-trained layers are fine-tuned on MRI brain scans to identify patterns associated with Alzheimer's. 
+                            This approach leverages CNN layers to enhance accuracy in detecting early signs of the disease. 
+                            The VGG16 model's deep architecture helps improve diagnostic precision by analyzing complex brain 
+                            structures.
+                        </p>
+                    </div>
+                    <p class="links"  style="margin-top: 30px; padding-top: 50px;">
+                        <b>Technologies Used: </b> 
+                        VGG16 Model, TensorFlow, Numpy/Pandas, CNN Layers
+                    </p><br>
+                    <p class="links">
+                        <b>GitHub Repository Link: </b>
+                        <a href="https://github.com/AnjanaShreya/Alzheimer-s-with-DL/tree/main" target="_blank">https://github.com/AnjanaShreya/Alzheimer-s-with-DL/tree/main</a>
+                    </p> <br>
+                </div>
+                
+            </div><!-- end of row -->
+        </div><!-- end of container -->
+    </section>
+    
+    <!-- section -->
+    <section class="section-sm bg-primary animate__animated animate-on-scroll" data-animation="fadeIn">
+        <!-- container -->
+        <div class="container text-center text-sm-left">
+            <!-- row -->
+            <div class="row align-items-center">
+                <div class="col-sm offset-md-1 mb-4 mb-md-0">
+                    <h6 class="title text-light">Want to work with me?</h6>
+                    <p class="m-0 text-light">Always feel Free to Contact & Hire me</p>
+                </div>
+                <div class="col-sm offset-sm-2 offset-md-3">
+                    <button class="btn btn-lg my-font btn-light rounded"><a href="mailto:chitturianjana@gmail.com">Hire Me</a> </button>
+                </div>
+            </div> <!-- end of row -->
+        </div> <!-- end of container -->
+    </section> <!-- end of section -->
+
+    <!-- testimonial section -->
+    <!-- <section class="section" id="certifications">
+        <div class="container text-center">
+            <p class="section-subtitle animate__animated animate-on-scroll" data-animation="fadeInLeft">My Certificates....</p>
+            <h6 class="section-title mb-6 animate__animated animate-on-scroll" data-animation="fadeInLeft">Certificates</h6>
+            <div class="col-md-6 certificate">
+                <img src="assets/imgs/cert 1.png" class="certificate animate__animated animate-on-scroll" data-animation="fadeInLeft">
+                <img src="assets/imgs/cert-2.png" class="certificate animate__animated animate-on-scroll" data-animation="fadeInRight">
+                <img src="assets/imgs/cert-3.png" class="certificate animate__animated animate-on-scroll" data-animation="fadeInRight">
+            </div>                
+        </div> 
+    </section>  -->
+    <section class="section" id="certifications">
+        <div class="container text-center">
+            <p class="section-subtitle animate__animated animate-on-scroll" data-animation="fadeInLeft">My Certificates....</p>
+            <h6 class="section-title mb-6 animate__animated animate-on-scroll" data-animation="fadeInLeft">Certificates</h6>
+            <div class="certificate-grid">
+                <img src="assets/imgs/cert 1.png" class="certificate animate__animated animate-on-scroll" data-animation="fadeInLeft" alt="Certificate 1">
+                <img src="assets/imgs/cert-2.png" class="certificate animate__animated animate-on-scroll" data-animation="fadeInRight" alt="Certificate 2">
+                <img src="assets/imgs/cert-3.png" class="certificate animate__animated animate-on-scroll" data-animation="fadeInLeft" alt="Certificate 3">
+            </div>                
+        </div> 
+    </section>
+    
+
+    <!-- contact section -->
+    <section class="section" id="contact">
+        <div class="container text-center">
+            <p class="section-subtitle  animate__animated animate-on-scroll" data-animation="fadeInRight">How can you communicate?</p>
+            <h6 class="section-title mb-5  animate__animated animate-on-scroll" data-animation="fadeInRight">Contact Me</h6>
+            <!-- contact form -->
+            <form id="contactForm" action="https://formspree.io/f/xnnalpyp" method="post" class="contact-form col-md-10 col-lg-8 m-auto  animate__animated animate-on-scroll" data-animation="fadeInLeft">
+                <div class="form-row">
+                    <div class="form-group col-sm-6">
+                        <input type="text" name="name" id="name" size="50" class="form-control" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group col-sm-6">
+                        <input type="email" name="email" id="email" class="form-control" placeholder="Enter Email" requried>
+                    </div>
+                    <div class="form-group col-sm-12">
+                        <textarea name="comment" id="comment" rows="6" class="form-control"
+                            placeholder="Write Something"></textarea>
+                    </div>
+                    <div class="form-group col-sm-12 mt-3">
+                        <input type="submit" value="Send Message" class="btn btn-outline-primary rounded">
+                    </div>
+                </div>
+            </form><!-- end of contact form -->
+        </div><!-- end of container -->
+    </section><!-- end of contact section -->
+
+    <!-- footer -->
+    <div class="container">
+        <footer class="footer">
+            <div class="social-links text-right m-auto ml-sm-auto">
+                <a href="https://www.linkedin.com/in/ch-s-anjana-shreya-68a74628a/" class="link"><i class="ti-linkedin"></i></a>
+                <a href="https://www.instagram.com/anjana.shreya/" class="link"><i class="ti-instagram"></i></a>
+            </div>
+        </footer>
+    </div> <!-- end of page footer -->
+
+    <!-- core  -->
+    <script src="assets/vendors/jquery/jquery-3.4.1.js"></script>
+    <script src="assets/vendors/bootstrap/bootstrap.bundle.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.10/typed.min.js" integrity="sha512-hIlMpy2enepx9maXZF1gn0hsvPLerXoLHdb095CmRY5HG3bZfN7XPBZ14g+TUDH1aGgfLyPHmY9/zuU53smuMw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/particlesjs/2.2.3/particles.min.js" integrity="sha512-jq8sZI0I9Og0nnZ+CfJRnUzNSDKxr/5Bvha5bn7AHzTnRyxUfpUArMzfH++mwE/hb2efOo1gCAgI+1RMzf8F7g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!-- bootstrap 3 affix -->
+    <script src="assets/vendors/bootstrap/bootstrap.affix.js"></script>
+
+    <!-- Meyawo js -->
+    <script src="assets/js/meyawo.js"></script>
+    <script src="assets/js/animation.js"></script>
+
 </body>
-</html>
+
+</html>  
